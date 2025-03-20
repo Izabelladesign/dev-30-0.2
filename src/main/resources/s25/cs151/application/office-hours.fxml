@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="s25.cs151.application.OfficeHoursController"
+      spacing="10" alignment="BASELINE_LEFT">
+
+    <Label text="Define Semester Office Hours" style="-fx-font-size: 20px;"/>
+
+    <Label text="Select Semester:"/>
+    <ComboBox fx:id="semesterComboBox"/>
+
+    <Label text="Enter Year:"/>
+    <TextField fx:id="yearTextField" />
+
+    <Label text="Select Days:"/>
+    <HBox spacing="10">
+        <CheckBox text="Monday" fx:id="mondayCheck"/>
+        <CheckBox text="Tuesday" fx:id="tuesdayCheck"/>
+        <CheckBox text="Wednesday" fx:id="wednesdayCheck"/>
+        <CheckBox text="Thursday" fx:id="thursdayCheck"/>
+        <CheckBox text="Friday" fx:id="fridayCheck"/>
+    </HBox>
+
+    <Label text="Select Time Slot:"/>
+    <HBox spacing="10">
+        <Label text="From:"/>
+        <TextField fx:id="fromHourTextField"/>
+        <Label text="To:"/>
+        <TextField fx:id="toHourTextField"/>
+    </HBox>
+
+    <Label text="Course Details:"/>
+
+    <Label text="Course Code:"/>
+    <TextField fx:id="courseCodeField" />
+    <Label text="Course Name:"/>
+    <TextField fx:id="courseNameField"/>
+    <Label text="Section Number: "/>
+    <TextField fx:id="sectionNumberField"/>
+
+    <Label text="Schedule Information:"/>
+    <TextField fx:id="studentNameField" />
+    <Label text="Schedule Date:"/>
+    <DatePicker fx:id="scheduleDatePicker"/>
+
+    <Label text="Select Time Slot:"/>
+    <ComboBox fx:id="scheduleTimeSlotComboBox"/>
+
+    <Label text="Select Course:"/>
+    <ComboBox fx:id="scheduleCourseComboBox"/>
+
+    <Label text="Reason for Appointment: "/>
+    <TextField fx:id="reasonField"/>
+    <Label text="Additional Comments:"/>
+    <TextField fx:id="commentField" />
+
+    <HBox spacing="10">
+        <Button text="Save" onAction="#saveOfficeHours"/>
+        <Button text="Close" onAction="#closeCurrWindow"/>
+    </HBox>
+</VBox>
