@@ -18,7 +18,7 @@ public class MainController {
      *
      */
 
-    //test
+
     @FXML
     private void goToDefineOfficeHours() throws IOException {
         Main.defineOfficeHoursPage();
