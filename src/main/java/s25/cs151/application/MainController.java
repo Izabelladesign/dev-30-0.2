@@ -17,6 +17,8 @@ public class MainController {
      * @throws IOException when the FXML File for offcie hour page can't load
      *
      */
+
+    //test
     @FXML
     private void goToDefineOfficeHours() throws IOException {
         Main.defineOfficeHoursPage();
