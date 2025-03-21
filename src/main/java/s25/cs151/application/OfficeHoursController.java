@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
+import java.util.ArrayList;
+
 /**
  *   Controller class for managing user interaction in the "Define Office Hour Page"
  *   Handles user action through saving office hours and closing windows
@@ -28,7 +30,8 @@ public class OfficeHoursController {
      */
     @FXML
     private void saveOfficeHours() {
-        //saves office hour information
+
+
     }
 
     /**
