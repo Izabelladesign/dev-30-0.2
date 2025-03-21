@@ -32,34 +32,4 @@
         <Label text="To:"/>
         <TextField fx:id="toHourTextField"/>
     </HBox>
-
-    <Label text="Course Details:"/>
-
-    <Label text="Course Code:"/>
-    <TextField fx:id="courseCodeField" />
-    <Label text="Course Name:"/>
-    <TextField fx:id="courseNameField"/>
-    <Label text="Section Number: "/>
-    <TextField fx:id="sectionNumberField"/>
-
-    <Label text="Schedule Information:"/>
-    <TextField fx:id="studentNameField" />
-    <Label text="Schedule Date:"/>
-    <DatePicker fx:id="scheduleDatePicker"/>
-
-    <Label text="Select Time Slot:"/>
-    <ComboBox fx:id="scheduleTimeSlotComboBox"/>
-
-    <Label text="Select Course:"/>
-    <ComboBox fx:id="scheduleCourseComboBox"/>
-
-    <Label text="Reason for Appointment: "/>
-    <TextField fx:id="reasonField"/>
-    <Label text="Additional Comments:"/>
-    <TextField fx:id="commentField" />
-
-    <HBox spacing="10">
-        <Button text="Save" onAction="#saveOfficeHours"/>
-        <Button text="Close" onAction="#closeCurrWindow"/>
-    </HBox>
 </VBox>
