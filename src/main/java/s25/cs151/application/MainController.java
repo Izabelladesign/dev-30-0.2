@@ -12,7 +12,7 @@ import java.io.IOException;
 public class MainController {
     /**
      *  Open the "Define Office Hours"
-     *  Method triggered by user action, e.g button clicking
+     *  Method triggered by user action, e.g button clicking3
      *
      */
 
