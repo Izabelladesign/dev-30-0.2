@@ -25,18 +25,6 @@ public class OfficeHoursController {
 
 
     /**
-     * Button for saving office hour information
-     */
-    @FXML
-    private Button saveButton;
-
-    /**
-     * Button for closing the open window and returning to the main
-     */
-    @FXML
-    private Button closeButton;
-
-    /**
      * Saves office hour information
      * implement method to store or process the input data
      */
@@ -58,6 +46,7 @@ public class OfficeHoursController {
         System.out.println("Saved successfully");
 
     }
+
     private String getSelectedDays() {
         ArrayList<String> days = new ArrayList<>();
         if (mondayCheck.isSelected()) days.add("Mon");
@@ -67,13 +56,5 @@ public class OfficeHoursController {
         if (fridayCheck.isSelected()) days.add("Fri");
         return String.join(", ", days);
 
-}
-
-    /**
-     *  Close the open window before returning to the main application window
-     */
-    @FXML
-    private void closeCurrWindow() {
-        //closes the current window returns to main window
     }
 }
