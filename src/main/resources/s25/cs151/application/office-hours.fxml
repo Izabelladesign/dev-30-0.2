@@ -2,7 +2,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.collections.FXCollections?>
 
+
+<?import java.lang.String?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="s25.cs151.application.OfficeHoursController"
@@ -11,7 +14,15 @@
     <Label text="Define Semester Office Hours" style="-fx-font-size: 20px;"/>
 
     <Label text="Select Semester:"/>
-    <ComboBox fx:id="semesterComboBox"/>
+    <ComboBox fx:id="semesterComboBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Spring"/>
+                <String fx:value="Fall"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
 
     <Label text="Enter Year:"/>
     <TextField fx:id="yearTextField" />
@@ -31,5 +42,7 @@
         <TextField fx:id="fromHourTextField"/>
         <Label text="To:"/>
         <TextField fx:id="toHourTextField"/>
+
+        <Button text="Save Office Hours" onAction="#saveOfficeHours"/>
     </HBox>
 </VBox>
