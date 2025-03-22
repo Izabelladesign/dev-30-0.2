@@ -35,7 +35,7 @@ public class Main extends Application {
      */
     public static void showHomePage() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("home-ClockItMainPage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1500, 1000);
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
         mainStage.setScene(scene); // settings the scene for the main stage
     }
 
@@ -51,7 +51,7 @@ public class Main extends Application {
             //closing the existing window
         }
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("office-hours.fxml")); //load the office hours FXML file
-        Scene scene = new Scene(fxmlLoader.load(), 1500, 1000);
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
         //Create a new stage for the office hours
         Stage stage = new Stage();
         stage.setTitle("Define Office Hours");

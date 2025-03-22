@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CSVFileManager {
-    private File theFile;
-    private File theDir;
+    private final File theFile;
+    private final File theDir;
 
     public CSVFileManager(String nameOfFile) {
 
@@ -24,15 +24,6 @@ public class CSVFileManager {
             }
         } catch (IOException e) {
             System.out.println("Something went wrong when creating the file.");
-        }
-    }
-    public void fileDelete() {
-
-        boolean result = theFile.delete();
-        if (result) {
-            System.out.println("File deleted.");
-        } else {
-            System.out.println("Could not delete file.");
         }
     }
 

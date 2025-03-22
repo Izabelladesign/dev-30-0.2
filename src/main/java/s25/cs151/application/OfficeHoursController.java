@@ -22,10 +22,7 @@ public class OfficeHoursController {
     private TextField yearTextField;
     @FXML
     private CheckBox mondayCheck, tuesdayCheck, wednesdayCheck, thursdayCheck, fridayCheck;
-    @FXML
-    private TextField fromHourTextField;
-    @FXML
-    private TextField toHourTextField;
+
 
     /**
      * Button for saving office hour information
@@ -49,16 +46,12 @@ public class OfficeHoursController {
         String semester = semesterComboBox.getValue();
         int year = Integer.parseInt(yearTextField.getText());
         String days = getSelectedDays();
-        String fromTime = fromHourTextField.getText();
-        String toTime = toHourTextField.getText();
+
 
         ArrayList<String> row = new ArrayList<>();
         row.add(semester);
         row.add(String.valueOf(year));
         row.add(days);
-        row.add(fromTime);
-        row.add(toTime);
-
         CSVFileManager fileManager = new CSVFileManager("office_hours");
         fileManager.fileWrite(row);
 

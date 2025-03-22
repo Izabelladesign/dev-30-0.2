@@ -14,7 +14,7 @@
     <Label text="Define Semester Office Hours" style="-fx-font-size: 20px;"/>
 
     <Label text="Select Semester:"/>
-    <ComboBox fx:id="semesterComboBox">
+    <ComboBox fx:id="semesterComboBox"  promptText="Select a semester">
         <items>
             <FXCollections fx:factory="observableArrayList">
                 <String fx:value="Spring"/>
@@ -24,8 +24,10 @@
     </ComboBox>
 
 
-    <Label text="Enter Year:"/>
-    <TextField fx:id="yearTextField" />
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Enter Year:"/>
+        <TextField fx:id="yearTextField" prefWidth="100"/>
+    </HBox>
 
     <Label text="Select Days:"/>
     <HBox spacing="10">
@@ -36,13 +38,7 @@
         <CheckBox text="Friday" fx:id="fridayCheck"/>
     </HBox>
 
-    <Label text="Select Time Slot:"/>
-    <HBox spacing="10">
-        <Label text="From:"/>
-        <TextField fx:id="fromHourTextField"/>
-        <Label text="To:"/>
-        <TextField fx:id="toHourTextField"/>
-
+    <HBox alignment="CENTER_LEFT">
         <Button text="Save Office Hours" onAction="#saveOfficeHours"/>
     </HBox>
 </VBox>
