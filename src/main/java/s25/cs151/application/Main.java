@@ -26,6 +26,7 @@ public class Main extends Application {
         mainStage = stage;
         showHomePage(); //display the home page
         stage.show(); // show the main stage
+        System.out.println();
     }
 
     /**
