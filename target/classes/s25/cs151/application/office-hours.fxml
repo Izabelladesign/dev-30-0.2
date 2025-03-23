@@ -17,9 +17,10 @@
     <ComboBox fx:id="semesterComboBox"  promptText="Select a semester">
         <items>
             <FXCollections fx:factory="observableArrayList">
-                <String fx:value="Spring"/>
-                <String fx:value="Winter"/>
                 <String fx:value="Fall"/>
+                <String fx:value="Winter"/>
+                <String fx:value="Spring"/>
+                <String fx:value="Summer"/>
             </FXCollections>
         </items>
     </ComboBox>
