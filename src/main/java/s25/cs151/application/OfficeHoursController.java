@@ -26,6 +26,11 @@ public class OfficeHoursController {
 
     private final CSVFileManager fileManager = new CSVFileManager("office_hours");
 
+    /**
+     * Initializes the TableView columns by assigning cell value factories
+     * based on their column index using a shared helper method.
+     * This helps the table display each row's semester, year, and days from an ObservableList.
+     */
     @FXML
     public void initialize() {
         semesterColumn.setCellValueFactory(getColumnValueFactory(0));
@@ -33,6 +38,9 @@ public class OfficeHoursController {
         daysColumn.setCellValueFactory(getColumnValueFactory(2));
     }
 
+    /**
+     * Returns a cell value for a given column index in a TableView row.
+     */
     private Callback<TableColumn.CellDataFeatures<ObservableList<String>, String>, javafx.beans.value.ObservableValue<String>> getColumnValueFactory(int columnIndex) {
         return cellData -> {
             ObservableList<String> row = cellData.getValue();
@@ -44,6 +52,10 @@ public class OfficeHoursController {
         };
     }
 
+    /**
+     * Use to save the data of Office Hours to the CSV file.
+     * After this, clear the data when it is correctly write in the file.
+     */
     @FXML
     private void saveOfficeHours() {
         String semester = semesterComboBox.getValue();
@@ -88,6 +100,9 @@ public class OfficeHoursController {
         fridayCheck.setSelected(false);
     }
 
+    /**
+     * Show the office Hours in a row by reading from the CSV file Manager.
+     */
     @FXML
     private void showOfficeHours() {
         officeHoursTable.getItems().clear();

@@ -45,7 +45,6 @@
 
     <Button text="Show Office Hours" onAction="#showOfficeHours"/>
 
-    <!-- Wrapper VBox to make the TableView expand properly -->
     <VBox VBox.vgrow="ALWAYS">
         <TableView fx:id="officeHoursTable" VBox.vgrow="ALWAYS">
             <columns>
