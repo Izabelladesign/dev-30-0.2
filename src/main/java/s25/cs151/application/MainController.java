@@ -3,6 +3,7 @@ package s25.cs151.application;
 import javafx.fxml.FXML;
 import java.io.IOException;
 
+
 /**
  *  Controller class for managing user interaction in the application
  *  Managing navigation between the different scenes
@@ -22,4 +23,8 @@ public class MainController {
         Main.defineOfficeHoursPage();
     }
 
+    @FXML
+    private void goToDefineSemesterTimeSlots() throws IOException {
+        Main.defineSemesterTimeSlotPopup();
+    }
 }

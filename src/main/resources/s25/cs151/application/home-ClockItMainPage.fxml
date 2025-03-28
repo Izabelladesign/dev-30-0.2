@@ -10,8 +10,8 @@
 
     <Label text="Welcome to ClockIt an Office Hours Manager!" style="-fx-font-size: 20px;"/>
     <Button text="Manage Faculty" />
-    <Button text="Define Office Hours" onAction="#goToDefineOfficeHours"/>
-    <Button text="Schedule Appointments"/>
+    <Button text="Define Semester’s office Hours" onAction="#goToDefineOfficeHours"/>
+    <Button text="Define Semester’s Time Slots" onAction="#goToDefineSemesterTimeSlots"/>
     <Button text="Search and Edit Appointments"/>
     <Button text="View Today’s Schedule"/>
 

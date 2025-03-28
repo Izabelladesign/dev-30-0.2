@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      spacing="20" alignment="CENTER" prefWidth="300" prefHeight="150">
+    <Label text="Semester Time Slot Popup" style="-fx-font-size: 16px;"/>
+</VBox>
