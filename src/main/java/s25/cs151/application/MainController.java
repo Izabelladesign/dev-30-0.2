@@ -16,13 +16,16 @@ public class MainController {
      *  Method triggered by user action, e.g button clicking3
      *
      */
-
-
     @FXML
     private void goToDefineOfficeHours() throws IOException {
         Main.defineOfficeHoursPage();
     }
 
+    /**
+     * Open the "Define Semester Time Slot"
+     * Method triggered by user action such as clicking a button
+     *
+     */
     @FXML
 
     private void goToDefineSemesterTimeSlots() throws IOException {
