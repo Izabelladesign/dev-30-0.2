@@ -24,7 +24,10 @@ public class MainController {
     }
 
     @FXML
+
     private void goToDefineSemesterTimeSlots() throws IOException {
+        System.out.println("Button clicked!");
         Main.defineSemesterTimeSlotPopup();
+
     }
 }

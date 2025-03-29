@@ -11,9 +11,9 @@ public class CSVFileManager {
     private final File csvFile;
     private final File dataDir;
 
-    public CSVFileManager(String nameOfFile) {
+    public CSVFileManager(String nameOfFile ) {
 
-        dataDir = new File("OfficeHoursData");
+        dataDir = new File(nameOfFile);
         //checks if our directory OfficeHoursData doesn't exist
         if (!dataDir.exists()) {
             dataDir.mkdir();

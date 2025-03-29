@@ -24,7 +24,7 @@ public class OfficeHoursController {
     @FXML private TableColumn<ObservableList<String>, String> yearColumn;
     @FXML private TableColumn<ObservableList<String>, String> daysColumn;
 
-    private final CSVFileManager fileManager = new CSVFileManager("office_hours");
+    private final CSVFileManager fileManager = new CSVFileManager( "office_hours");
 
     /**
      * Initializes the TableView columns by assigning cell value factories
@@ -64,7 +64,7 @@ public class OfficeHoursController {
         if (semester == null) return;
         if (yearText.isEmpty()) return;
 
-        int year = 0;
+        int year;
         try {
             year = Integer.parseInt(yearText);
         } catch (Exception e) {
@@ -100,17 +100,7 @@ public class OfficeHoursController {
         fridayCheck.setSelected(false);
     }
 
-    /**
-     * Show the office Hours in a row by reading from the CSV file Manager.
-     */
-    @FXML
-    private void showOfficeHours() {
-        officeHoursTable.getItems().clear();
 
-        ArrayList<ArrayList<String>> rows = fileManager.fileRead();
-        for (ArrayList<String> row : rows) {
-            ObservableList<String> rowData = FXCollections.observableArrayList(row);
-            officeHoursTable.getItems().add(rowData);
-        }
-    }
+
 }
+

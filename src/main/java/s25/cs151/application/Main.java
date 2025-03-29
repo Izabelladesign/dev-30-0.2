@@ -62,7 +62,7 @@ public class Main extends Application {
     }
 
     public static void defineSemesterTimeSlotPopup() throws IOException {
-        if(mainStage !=null){
+        if (mainStage != null) {
             mainStage.close();
         }
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("semsterTimeSlot-page.fxml")); //load the office hours FXML file
@@ -72,13 +72,12 @@ public class Main extends Application {
         stage.setTitle("Define Semester Time Slots");
         stage.setScene(scene);
         stage.show(); //display the new stage
-
     }
-    /**
-     * The main method to start the JavaFX application
-     *
-     * @param args the command-line argument
-     */
+        /**
+         * The main method to start the JavaFX application
+         *
+         * @param args the command-line argument
+         */
     public static void main(String[] args) {
         launch(); //launch the JavaFX application
     }

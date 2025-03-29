@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
 <VBox xmlns="http://javafx.com/javafx"
-      spacing="20" alignment="CENTER" prefWidth="300" prefHeight="150">
-    <Label text="Semester Time Slot Popup" style="-fx-font-size: 16px;"/>
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="s25.cs151.application.SemesterTimeSlotsController"
+      spacing="10" alignment="TOP_LEFT"
+      prefWidth="1000" prefHeight="800">
+
+    <Label text="Define Semester Time Slots" style="-fx-font-size: 20px;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="From:"/>
+        <ComboBox fx:id="fromComboBox" promptText="HH:MM"/>
+        <Label text="To:"/>
+        <ComboBox fx:id="toComboBox" promptText="HH:MM"/>
+        <Button text="Add Slot" onAction="#addSlot"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT">
+        <Button text="Save Time Slots" onAction="#saveAllSlots"/>
+    </HBox>
+
+    <VBox VBox.vgrow="ALWAYS">
+        <TableView fx:id="slotTableView" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="fromCol" text="From" prefWidth="200"/>
+                <TableColumn fx:id="toCol" text="To" prefWidth="200"/>
+            </columns>
+        </TableView>
+    </VBox>
+
 </VBox>

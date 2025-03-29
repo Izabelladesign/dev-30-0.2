@@ -43,8 +43,6 @@
         <Button text="Save Office Hours" onAction="#saveOfficeHours"/>
     </HBox>
 
-    <Button text="Show Office Hours" onAction="#showOfficeHours"/>
-
     <VBox VBox.vgrow="ALWAYS">
         <TableView fx:id="officeHoursTable" VBox.vgrow="ALWAYS">
             <columns>
