@@ -13,10 +13,9 @@
 
     <HBox spacing="10" alignment="CENTER_LEFT">
         <Label text="From:"/>
-        <ComboBox fx:id="fromComboBox" promptText="HH:MM"/>
+        <ComboBox fx:id="fromComboBox" />
         <Label text="To:"/>
-        <ComboBox fx:id="toComboBox" promptText="HH:MM"/>
-        <Button text="Add Slot" onAction="#addSlot"/>
+        <ComboBox fx:id="toComboBox" />
     </HBox>
 
     <HBox alignment="CENTER_LEFT">
