@@ -11,9 +11,9 @@ public class CSVFileManager {
     private final File csvFile;
     private final File dataDir;
 
-    public CSVFileManager(String nameOfFile ) {
+    public CSVFileManager(String nameOfFile) {
 
-        dataDir = new File(nameOfFile);
+        dataDir = new File("OfficeHoursData");
         //checks if our directory OfficeHoursData doesn't exist
         if (!dataDir.exists()) {
             dataDir.mkdir();
@@ -75,5 +75,21 @@ public class CSVFileManager {
         }
 
         return myDataList;
+    }
+
+    /**
+     * Save the data permanently after the information is added
+     * @param rows
+     */
+    public void overwriteFile(ArrayList<ArrayList<String>> rows) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, false))) { // false = overwrite mode
+            for (ArrayList<String> row : rows) {
+                bw.write(String.join(",", row));
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error.");
+        }
+
     }
 }

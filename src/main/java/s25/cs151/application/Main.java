@@ -79,6 +79,28 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show(); //display the new stage
     }
+
+    /**
+     *  Opens a new window where courses can be specified.
+     *  If a window is already open, then it shuts before starting another one.
+     *
+     * @throws IOException when the FXML is unable to load.
+     */
+    public static void defineCoursesPage() throws IOException {
+        if(mainStage !=null){
+            mainStage.close();
+            //closing the existing window
+        }
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("courses.fxml")); //load the office hours FXML file
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
+        //Create a new stage for the office hours
+        Stage stage = new Stage();
+        stage.setTitle("Define Courses");
+        stage.setScene(scene);
+        stage.show(); //display the new stage
+
+    }
+
     /**
      * The main method to start the JavaFX application
      *

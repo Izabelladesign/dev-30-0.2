@@ -27,7 +27,7 @@ public class SemesterTimeSlotsController {
     @FXML private TableColumn<TimeSlot, String> toCol;
 
 
-    private final CSVFileManager fileManager = new CSVFileManager("Semesters Time Slots");
+    private final CSVFileManager fileManager = new CSVFileManager("Semesters_Time_Slots");
     private static final DateTimeFormatter HourMinFormatter = DateTimeFormatter.ofPattern("HH:mm");
 
 
@@ -147,11 +147,18 @@ public class SemesterTimeSlotsController {
         fromComboBox.setValue(null);
         toComboBox.setValue(null);
 
-        if (slotTableView.getItems().isEmpty()) {
-            return;
-        }
+        List<TimeSlot> currentList = new ArrayList<>(slotTableView.getItems());
+        java.util.Collections.sort(currentList, new java.util.Comparator<TimeSlot>() {
+            @Override
+            public int compare(TimeSlot a, TimeSlot b) {
+                return a.getFromTime().compareTo(b.getFromTime());
+            }
+        });
 
-        for (TimeSlot slot : slotTableView.getItems()) {
+        slotTableView.getItems().setAll(currentList); // replace with sorted list
+
+        // Save to CSV
+        for (TimeSlot slot : currentList) {
             ArrayList<String> dataRow = new ArrayList<>();
             dataRow.add(slot.getFromTime().format(HourMinFormatter));
             dataRow.add(slot.getToTime().format(HourMinFormatter));

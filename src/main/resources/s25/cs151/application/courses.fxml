@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.FXCollections?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="s25.cs151.application.CoursesController"
+      spacing="10" alignment="TOP_LEFT"
+      prefWidth="1000" prefHeight="800">
+
+    <Label text="Define Courses" style="-fx-font-size: 20px;"/>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Course Code:"/>
+        <TextField fx:id="codeField" promptText="Example: CS151"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Course Name:"/>
+        <TextField fx:id="nameField" promptText="Example: Object-Oriented Design" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Section:"/>
+        <TextField fx:id="sectionField" promptText="Example: 01"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT">
+        <Button text="Add Course" onAction="#handleAddCourse"/>
+    </HBox>
+
+    <VBox VBox.vgrow="ALWAYS">
+        <TableView fx:id="courseTable" prefHeight="400" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="codeColumn" text="Course Code" prefWidth="150"/>
+                <TableColumn fx:id="nameColumn" text="Course Name" prefWidth="300"/>
+                <TableColumn fx:id="sectionColumn" text="Section" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>
