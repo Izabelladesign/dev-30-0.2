@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -12,37 +8,53 @@
       spacing="10" alignment="TOP_LEFT"
       prefWidth="1000" prefHeight="800">
 
-    <Label text="Enter Office Hours Schedule" style="-fx-font-size: 20px;" />
+    <Label text="Office Hours Schedule" style="-fx-font-size: 20px;" />
 
-    <HBox spacing="10">
-        <Label text="Student Name:" />
-        <TextField fx:id="studentNameField" promptText="e.g. John Doe" prefWidth="300"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Student Name:" minWidth="120"/>
+        <TextField fx:id="studentNameField" prefWidth="200"/>
     </HBox>
 
-    <HBox spacing="10">
-        <Label text="Date:" />
-        <DatePicker fx:id="scheduleDatePicker"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Schedule Date:" minWidth="120"/>
+        <DatePicker fx:id="scheduleDatePicker" prefWidth="200"/>
     </HBox>
 
-    <HBox spacing="10">
-        <Label text="Time Slot:" />
-        <ComboBox fx:id="timeSlotComboBox" promptText="Select Time Slot" prefWidth="200"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Time Slot:" minWidth="120"/>
+        <ComboBox fx:id="timeSlotComboBox" prefWidth="200"/>
     </HBox>
 
-    <HBox spacing="10">
-        <Label text="Course:" />
-        <ComboBox fx:id="courseComboBox" promptText="Select Course" prefWidth="200"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Course:" minWidth="120"/>
+        <ComboBox fx:id="courseComboBox" prefWidth="200"/>
     </HBox>
 
-    <HBox spacing="10">
-        <Label text="Reason:" />
-        <TextField fx:id="reasonField" prefWidth="400" />
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Reason:" minWidth="120"/>
+        <TextField fx:id="reasonField" prefWidth="200"/>
     </HBox>
 
-    <HBox spacing="10">
-        <Label text="Comment:" />
-        <TextField fx:id="commentField" prefWidth="400"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Comment:" minWidth="120"/>
+        <TextField fx:id="commentField" prefWidth="200"/>
     </HBox>
 
+    <Button text="Save Schedule" onAction="#handleSaveSchedule" maxWidth="120"/>
+
+    <Separator />
+
+    <VBox VBox.vgrow="ALWAYS">
+        <TableView fx:id="scheduleTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="studentColumn" text="Student" prefWidth="150"/>
+                <TableColumn fx:id="dateColumn" text="Schedule Date" prefWidth="150"/>
+                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="150"/>
+                <TableColumn fx:id="courseColumn" text="Course" prefWidth="150"/>
+                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="150"/>
+                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </VBox>
 
 </VBox>

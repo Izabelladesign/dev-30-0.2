@@ -36,7 +36,6 @@ public class OfficeHoursController {
         semesterColumn.setCellValueFactory(getColumnValueFactory(0));
         yearColumn.setCellValueFactory(getColumnValueFactory(1));
         daysColumn.setCellValueFactory(getColumnValueFactory(2));
-        semesterComboBox.setValue("Spring");
     }
 
     /**

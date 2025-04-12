@@ -100,7 +100,15 @@ public class Main extends Application {
         stage.show(); //display the new stage
 
     }
-    public static void defineOfficeHoursSchedulePage() throws IOException {
+
+    /**
+     *  Opens a new window where courses can be specified.
+     *  If a window is already open, then it shuts before starting another one.
+     *
+     * @throws IOException when the FXML is unable to load.
+     */
+
+    public static void showOfficeHoursSchedulePage() throws IOException {
         if (mainStage != null) {
             mainStage.close();
         }

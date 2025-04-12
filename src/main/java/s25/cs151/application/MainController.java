@@ -43,8 +43,13 @@ public class MainController {
         Main.defineCoursesPage();
     }
 
+    /**
+     *  Open the "Define Office Hours Schedule"
+     *  Method triggered by user action, e.g button clicking
+     *
+     */
     @FXML
-    private void goToOfficeHoursSchedule() throws IOException {
-        Main.defineOfficeHoursSchedulePage();
+    private void goToOfficeHoursSchedulePage() throws IOException {
+        Main.showOfficeHoursSchedulePage();
     }
 }

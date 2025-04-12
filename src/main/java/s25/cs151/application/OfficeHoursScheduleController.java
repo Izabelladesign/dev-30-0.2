@@ -1,8 +1,12 @@
 package s25.cs151.application;
 
+import javafx.beans.value.ObservableValue;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.collections.FXCollections;
+import javafx.util.Callback;
+import javafx.beans.property.SimpleStringProperty;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,6 +24,13 @@ public class OfficeHoursScheduleController {
     @FXML private ComboBox<String> courseComboBox;
     @FXML private TextField reasonField;
     @FXML private TextField commentField;
+    @FXML private TableView<ObservableList<String>> scheduleTable;
+    @FXML private TableColumn<ObservableList<String>, String> studentColumn;
+    @FXML private TableColumn<ObservableList<String>, String> dateColumn;
+    @FXML private TableColumn<ObservableList<String>, String> timeSlotColumn;
+    @FXML private TableColumn<ObservableList<String>, String> courseColumn;
+    @FXML private TableColumn<ObservableList<String>, String> reasonColumn;
+    @FXML private TableColumn<ObservableList<String>, String> commentColumn;
 
     private final CSVFileManager fileManager = new CSVFileManager("OfficeHoursSchedule");
 
@@ -31,6 +42,15 @@ public class OfficeHoursScheduleController {
 
     @FXML
     public void initialize() {
+        studentColumn.setCellValueFactory(getColumnValueFactory(0));
+        dateColumn.setCellValueFactory(getColumnValueFactory(1));
+        timeSlotColumn.setCellValueFactory(getColumnValueFactory(2));
+        courseColumn.setCellValueFactory(getColumnValueFactory(3));
+        reasonColumn.setCellValueFactory(getColumnValueFactory(4));
+        commentColumn.setCellValueFactory(getColumnValueFactory(5));
+
+        dateColumn.setSortType(TableColumn.SortType.ASCENDING);
+        scheduleTable.getSortOrder().add(dateColumn);
         scheduleDatePicker.setValue(LocalDate.now());
 
         //populate time slots
@@ -58,6 +78,19 @@ public class OfficeHoursScheduleController {
             }
         }
         courseComboBox.setItems(FXCollections.observableArrayList(courseList));
+
+        ArrayList<ArrayList<String>> rows = fileManager.fileRead();
+        rows.sort((r1, r2) -> {
+            LocalDate d1 = LocalDate.parse(r1.get(1));
+            LocalDate d2 = LocalDate.parse(r2.get(1));
+            return d1.compareTo(d2); // ascending
+        }
+        );
+
+        for (int i = 0; i < rows.size(); i++) {
+            ObservableList<String> rowData = FXCollections.observableArrayList(rows.get(i));
+            scheduleTable.getItems().add(rowData);
+        }
     }
 
     /**
@@ -102,6 +135,10 @@ public class OfficeHoursScheduleController {
         //Saves the data
         fileManager.fileWrite(row);
 
+        ObservableList<String> rowData = FXCollections.observableArrayList(row);
+        scheduleTable.getItems().add(rowData);
+
+        scheduleTable.sort();
         //Clear form fields
         studentNameField.clear();
         scheduleDatePicker.setValue(LocalDate.now());
@@ -109,5 +146,14 @@ public class OfficeHoursScheduleController {
         courseComboBox.getSelectionModel().clearSelection();
         reasonField.clear();
         commentField.clear();
+    }
+    private Callback<TableColumn.CellDataFeatures<ObservableList<String>, String>, ObservableValue<String>> getColumnValueFactory(int index) {
+        return new Callback<>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList<String>, String> cellData) {
+                String value = (cellData.getValue().size() > index) ? cellData.getValue().get(index) : "";
+                return new SimpleStringProperty(value);
+            }
+        };
     }
 }
