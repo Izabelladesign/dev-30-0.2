@@ -24,6 +24,7 @@ public class OfficeHoursScheduleController {
     @FXML private ComboBox<String> courseComboBox;
     @FXML private TextField reasonField;
     @FXML private TextField commentField;
+
     @FXML private TableView<ObservableList<String>> scheduleTable;
     @FXML private TableColumn<ObservableList<String>, String> studentColumn;
     @FXML private TableColumn<ObservableList<String>, String> dateColumn;
@@ -38,6 +39,7 @@ public class OfficeHoursScheduleController {
      * Initializes the Office Hours Schedule form
      * Runs when the office Hours Schedule fxml is loaded
      * Sets the date and fills in the time slot and chooses a course drop down using the CSV File
+     * Sorts the data in ascending order
      */
 
     @FXML
@@ -60,7 +62,7 @@ public class OfficeHoursScheduleController {
         ArrayList<String> timeSlotList = new ArrayList<>();
         for (ArrayList<String> row : timeSlotData) {
             if (row.size() >= 2) {
-                String slot = row.get(0) + " – " + row.get(1); // e.g. 4:30 – 4:45
+                String slot = row.get(0) + " – " + row.get(1);
                 timeSlotList.add(slot);
             }
         }
@@ -79,14 +81,16 @@ public class OfficeHoursScheduleController {
         }
         courseComboBox.setItems(FXCollections.observableArrayList(courseList));
 
+        //sort the data
         ArrayList<ArrayList<String>> rows = fileManager.fileRead();
         rows.sort((r1, r2) -> {
-            LocalDate d1 = LocalDate.parse(r1.get(1));
-            LocalDate d2 = LocalDate.parse(r2.get(1));
-            return d1.compareTo(d2); // ascending
-        }
+                    LocalDate d1 = LocalDate.parse(r1.get(1));
+                    LocalDate d2 = LocalDate.parse(r2.get(1));
+                    return d1.compareTo(d2); // ascending
+                }
         );
 
+        //get the values from the table
         for (int i = 0; i < rows.size(); i++) {
             ObservableList<String> rowData = FXCollections.observableArrayList(rows.get(i));
             scheduleTable.getItems().add(rowData);
@@ -98,6 +102,7 @@ public class OfficeHoursScheduleController {
      * Gathers input from the form
      * Checks to make sure all the required fields are filled
      * saves the data to the CSV file and resets for a new entry
+     * load the data and show in the table
      */
 
     @FXML
@@ -147,6 +152,8 @@ public class OfficeHoursScheduleController {
         reasonField.clear();
         commentField.clear();
     }
+
+    //load the data added
     private Callback<TableColumn.CellDataFeatures<ObservableList<String>, String>, ObservableValue<String>> getColumnValueFactory(int index) {
         return new Callback<>() {
             @Override

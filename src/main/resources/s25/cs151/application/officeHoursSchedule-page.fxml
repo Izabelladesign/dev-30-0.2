@@ -44,15 +44,16 @@
 
     <Separator />
 
+
     <VBox VBox.vgrow="ALWAYS">
-        <TableView fx:id="scheduleTable" VBox.vgrow="ALWAYS">
+        <TableView fx:id="scheduleTable">
             <columns>
-                <TableColumn fx:id="studentColumn" text="Student" prefWidth="150"/>
-                <TableColumn fx:id="dateColumn" text="Schedule Date" prefWidth="150"/>
-                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="150"/>
-                <TableColumn fx:id="courseColumn" text="Course" prefWidth="150"/>
-                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="150"/>
-                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="150"/>
+                <TableColumn fx:id="studentColumn" text="Student" />
+                <TableColumn fx:id="dateColumn" text="Date" />
+                <TableColumn fx:id="timeSlotColumn" text="Time Slot" />
+                <TableColumn fx:id="courseColumn" text="Course" />
+                <TableColumn fx:id="reasonColumn" text="Reason" />
+                <TableColumn fx:id="commentColumn" text="Comment" />
             </columns>
         </TableView>
     </VBox>
