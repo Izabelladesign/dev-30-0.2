@@ -45,6 +45,5 @@
         <TextField fx:id="commentField" prefWidth="400"/>
     </HBox>
 
-    <Button text="Save Schedule" onAction="#handleSaveSchedule"/>
 
 </VBox>

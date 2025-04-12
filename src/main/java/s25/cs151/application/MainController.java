@@ -42,4 +42,9 @@ public class MainController {
     private void goToDefineCourses() throws IOException {
         Main.defineCoursesPage();
     }
+
+    @FXML
+    private void goToOfficeHoursSchedule() throws IOException {
+        Main.defineOfficeHoursSchedulePage();
+    }
 }
