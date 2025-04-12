@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="edits">
+      <change afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursScedule-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Izabelladesign&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Izabelladesign/dev-30-0.2.git&quot;,
+    &quot;accountId&quot;: &quot;8d65d662-798f-46e1-8432-df3a86c49cc2&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2uakNDo7kynEzgmA3ElXVTx9gJy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/izabelladoser/Desktop/dev-30-0.2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="zulu-24" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="s25.cs151.application.Main" />
+      <module name="HelloWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s25.cs151.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="" />
+      <created>1742494031019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742494031019</updated>
+      <workItem from="1742494032128" duration="2590000" />
+      <workItem from="1742517078345" duration="219000" />
+      <workItem from="1742524246902" duration="662000" />
+      <workItem from="1742526087787" duration="9676000" />
+      <workItem from="1742604399412" duration="5640000" />
+      <workItem from="1742626927812" duration="460000" />
+      <workItem from="1742664951995" duration="11919000" />
+      <workItem from="1742710444929" duration="13000" />
+      <workItem from="1742710459818" duration="11000" />
+      <workItem from="1742710491570" duration="60000" />
+      <workItem from="1742952147366" duration="17000" />
+      <workItem from="1742952239712" duration="109000" />
+      <workItem from="1742952411192" duration="19000" />
+      <workItem from="1742952433217" duration="17000" />
+      <workItem from="1742952454868" duration="356000" />
+      <workItem from="1742952822189" duration="312000" />
+      <workItem from="1742953154218" duration="354000" />
+      <workItem from="1742953566306" duration="6097000" />
+      <workItem from="1743146175750" duration="7000" />
+      <workItem from="1743146393137" duration="75000" />
+      <workItem from="1743146469969" duration="1000" />
+      <workItem from="1743146480283" duration="267000" />
+      <workItem from="1743146782208" duration="177000" />
+      <workItem from="1743146968389" duration="3061000" />
+      <workItem from="1743154555265" duration="10488000" />
+      <workItem from="1743222022509" duration="4068000" />
+      <workItem from="1743226987363" duration="8495000" />
+      <workItem from="1743280577449" duration="634000" />
+      <workItem from="1744259513260" duration="7073000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <option name="closed" value="true" />
+      <created>1742500724416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742500724416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <option name="closed" value="true" />
+      <created>1742500739474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742500739474</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test remove">
+      <option name="closed" value="true" />
+      <created>1742500865215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742500865215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test remove">
+      <option name="closed" value="true" />
+      <created>1742529774377</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742529774377</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test remove">
+      <option name="closed" value="true" />
+      <created>1742529837940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742529837940</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test remove">
+      <option name="closed" value="true" />
+      <created>1742601054590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742601054590</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding a way to save information on define office hours page">
+      <option name="closed" value="true" />
+      <created>1742607060910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742607060910</updated>
+    </task>
+    <task id="LOCAL-00008" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742613429204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742613429204</updated>
+    </task>
+    <task id="LOCAL-00009" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742613576290</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742613576290</updated>
+    </task>
+    <task id="LOCAL-00010" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742620368076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742620368076</updated>
+    </task>
+    <task id="LOCAL-00011" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742627379867</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742627379867</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742699005124</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742699005124</updated>
+    </task>
+    <task id="LOCAL-00013" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742707863958</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742707863958</updated>
+    </task>
+    <task id="LOCAL-00014" summary="edits">
+      <option name="closed" value="true" />
+      <created>1742710099047</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742710099047</updated>
+    </task>
+    <task id="LOCAL-00015" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743147317319</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743147317319</updated>
+    </task>
+    <task id="LOCAL-00016" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743149843960</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743149843960</updated>
+    </task>
+    <task id="LOCAL-00017" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743223329119</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743223329119</updated>
+    </task>
+    <task id="LOCAL-00018" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743226635846</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743226635846</updated>
+    </task>
+    <task id="LOCAL-00019" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743263462392</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743263462392</updated>
+    </task>
+    <task id="LOCAL-00020" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743274484645</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1743274484645</updated>
+    </task>
+    <task id="LOCAL-00021" summary="edits">
+      <option name="closed" value="true" />
+      <created>1743280401927</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743280401927</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="test remove" />
+    <MESSAGE value="adding a way to save information on define office hours page" />
+    <MESSAGE value="edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="edits" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/s25/cs151/application/CSVFileManager.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/s25/cs151/application/CSVFileManager.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/s25/cs151/application/CSVFileManager.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

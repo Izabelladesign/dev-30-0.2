@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="s25.cs151.application.OfficeHoursController"
+      spacing="10" alignment="TOP_LEFT"
+      prefWidth="1000" prefHeight="800">
+
+    <Label text="Define Semester Office Hours" style="-fx-font-size: 20px;"/>
+
+    <Label text="Select Semester:"/>
+    <ComboBox fx:id="semesterComboBox" promptText="Select a semester">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Fall"/>
+                <String fx:value="Winter"/>
+                <String fx:value="Spring"/>
+                <String fx:value="Summer"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Enter Year:"/>
+        <TextField fx:id="yearTextField" prefWidth="650"/>
+    </HBox>
+
+    <Label text="Select Days:"/>
+    <HBox spacing="10">
+        <CheckBox text="Monday" fx:id="mondayCheck"/>
+        <CheckBox text="Tuesday" fx:id="tuesdayCheck"/>
+        <CheckBox text="Wednesday" fx:id="wednesdayCheck"/>
+        <CheckBox text="Thursday" fx:id="thursdayCheck"/>
+        <CheckBox text="Friday" fx:id="fridayCheck"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT">
+        <Button text="Save Office Hours" onAction="#saveOfficeHours"/>
+    </HBox>
+
+    <VBox VBox.vgrow="ALWAYS">
+        <TableView fx:id="officeHoursTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="semesterColumn" text="Semester" prefWidth="200"/>
+                <TableColumn fx:id="yearColumn" text="Year" prefWidth="100"/>
+                <TableColumn fx:id="daysColumn" text="Days" prefWidth="600"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+</VBox>
