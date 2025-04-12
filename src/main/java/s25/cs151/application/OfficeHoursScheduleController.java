@@ -7,6 +7,11 @@ import javafx.collections.FXCollections;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+/**
+ * Control class for the Office Hours Schedule
+ * Handles interaction between user input and office hours schedule
+ */
+
 public class OfficeHoursScheduleController {
 
     @FXML private TextField studentNameField;
@@ -18,10 +23,17 @@ public class OfficeHoursScheduleController {
 
     private final CSVFileManager fileManager = new CSVFileManager("OfficeHoursSchedule");
 
+    /**
+     * Initializes the Office Hours Schedule form
+     * Runs when the office Hours Schedule fxml is loaded
+     * Sets the date and fills in the time slot and chooses a course drop down using the CSV File
+     */
+
     @FXML
     public void initialize() {
         scheduleDatePicker.setValue(LocalDate.now());
 
+        //populate time slots
         CSVFileManager timeSlotManager = new CSVFileManager("Semesters_Time_Slots");
         ArrayList<ArrayList<String>> timeSlotData = timeSlotManager.fileRead();
 
@@ -34,7 +46,7 @@ public class OfficeHoursScheduleController {
         }
         timeSlotComboBox.setItems(FXCollections.observableArrayList(timeSlotList));
 
-
+        //populate course options
         CSVFileManager courseManager = new CSVFileManager("courses");
         ArrayList<ArrayList<String>> courseData = courseManager.fileRead();
 
@@ -48,6 +60,13 @@ public class OfficeHoursScheduleController {
         courseComboBox.setItems(FXCollections.observableArrayList(courseList));
     }
 
+    /**
+     * Runs when the user clicks the save button
+     * Gathers input from the form
+     * Checks to make sure all the required fields are filled
+     * saves the data to the CSV file and resets for a new entry
+     */
+
     @FXML
     private void handleSaveSchedule() {
         String name = studentNameField.getText().trim();
@@ -57,6 +76,7 @@ public class OfficeHoursScheduleController {
         String reason = reasonField.getText().trim();
         String comment = commentField.getText().trim();
 
+        //checks to see if all the required fields are filled before saving
         if (name.isEmpty()) {
             return;
         }
@@ -70,6 +90,7 @@ public class OfficeHoursScheduleController {
             return;
         }
 
+        //Creates a new row with all the input data
         ArrayList<String> row = new ArrayList<>();
         row.add(name);
         row.add(date.toString());
@@ -78,9 +99,10 @@ public class OfficeHoursScheduleController {
         row.add(reason);
         row.add(comment);
 
+        //Saves the data
         fileManager.fileWrite(row);
 
-
+        //Clear form fields
         studentNameField.clear();
         scheduleDatePicker.setValue(LocalDate.now());
         timeSlotComboBox.getSelectionModel().clearSelection();
