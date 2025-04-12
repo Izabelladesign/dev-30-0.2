@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="s25.cs151.application.OfficeHoursScheduleController"
+      spacing="12" alignment="TOP_LEFT"
+      padding="20"
+      prefWidth="1000" prefHeight="800">
+
+    <Label text="Enter Office Hours Schedule" style="-fx-font-size: 20px;" />
+
+    <HBox spacing="10">
+        <Label text="Student Name:" />
+        <TextField fx:id="studentNameField" promptText="e.g. John Doe" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Date:" />
+        <DatePicker fx:id="scheduleDatePicker"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Time Slot:" />
+        <ComboBox fx:id="timeSlotComboBox" promptText="Select Time Slot" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Course:" />
+        <ComboBox fx:id="courseComboBox" promptText="Select Course" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Reason:" />
+        <TextField fx:id="reasonField" prefWidth="400" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Comment:" />
+        <TextField fx:id="commentField" prefWidth="400"/>
+    </HBox>
+
+    <Button text="Save Schedule" onAction="#handleSaveSchedule"/>
+
+</VBox>

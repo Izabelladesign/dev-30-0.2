@@ -9,10 +9,10 @@
       spacing="10" alignment="CENTER">
 
     <Label text="Welcome to ClockIt an Office Hours Manager!" style="-fx-font-size: 20px;"/>
+    <Button text="Office Hours Schedule"/>
     <Button text="Define Semester’s office Hours" onAction="#goToDefineOfficeHours"/>
     <Button text="Define Semester’s Time Slots" onAction="#goToDefineSemesterTimeSlots"/>
     <Button text="Define Courses" onAction="#goToDefineCourses" />
-    <Button text="Search and Edit Appointments"/>
-    <Button text="View Today’s Schedule"/>
+
 
 </VBox>
