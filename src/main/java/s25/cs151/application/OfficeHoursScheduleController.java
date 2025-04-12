@@ -22,27 +22,30 @@ public class OfficeHoursScheduleController {
     public void initialize() {
         scheduleDatePicker.setValue(LocalDate.now());
 
-        // Load time slots from file
         CSVFileManager timeSlotManager = new CSVFileManager("Semesters_Time_Slots");
-        ArrayList<ArrayList<String>> timeSlots = timeSlotManager.fileRead();
-        ArrayList<String> formattedSlots = new ArrayList<>();
-        for (ArrayList<String> row : timeSlots) {
-            if (row.size() >= 2) {
-                formattedSlots.add(row.get(0) + " – " + row.get(1));
-            }
-        }
-        timeSlotComboBox.setItems(FXCollections.observableArrayList(formattedSlots));
+        ArrayList<ArrayList<String>> timeSlotData = timeSlotManager.fileRead();
 
-        // Load course codes + section from file
-        CSVFileManager courseManager = new CSVFileManager("courses");
-        ArrayList<ArrayList<String>> courses = courseManager.fileRead();
-        ArrayList<String> formattedCourses = new ArrayList<>();
-        for (ArrayList<String> row : courses) {
+        ArrayList<String> timeSlotList = new ArrayList<>();
+        for (ArrayList<String> row : timeSlotData) {
             if (row.size() >= 2) {
-                formattedCourses.add(row.get(0) + "-" + row.get(2));  // CS151-04
+                String slot = row.get(0) + " – " + row.get(1); // e.g. 4:30 – 4:45
+                timeSlotList.add(slot);
             }
         }
-        courseComboBox.setItems(FXCollections.observableArrayList(formattedCourses));
+        timeSlotComboBox.setItems(FXCollections.observableArrayList(timeSlotList));
+
+
+        CSVFileManager courseManager = new CSVFileManager("courses");
+        ArrayList<ArrayList<String>> courseData = courseManager.fileRead();
+
+        ArrayList<String> courseList = new ArrayList<>();
+        for (ArrayList<String> row : courseData) {
+            if (row.size() >= 3) {
+                String course = row.get(0) + "-" + row.get(2);
+                courseList.add(course);
+            }
+        }
+        courseComboBox.setItems(FXCollections.observableArrayList(courseList));
     }
 
     @FXML
@@ -54,7 +57,16 @@ public class OfficeHoursScheduleController {
         String reason = reasonField.getText().trim();
         String comment = commentField.getText().trim();
 
-        if (name.isEmpty() || date == null || timeSlot == null || course == null) {
+        if (name.isEmpty()) {
+            return;
+        }
+        if (date == null) {
+            return;
+        }
+        if (timeSlot == null) {
+            return;
+        }
+        if (course == null) {
             return;
         }
 

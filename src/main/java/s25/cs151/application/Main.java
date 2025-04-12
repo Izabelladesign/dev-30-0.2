@@ -104,7 +104,7 @@ public class Main extends Application {
         if (mainStage != null) {
             mainStage.close();
         }
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("officeHoursSchedule.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("officeHoursSchedule-page.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
         Stage stage = new Stage();
         stage.setTitle("Office Hours Schedule");
