@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="edits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursScedule-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursScedule-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursScedule-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/s25/cs151/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/s25/cs151/application/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/OfficeHoursController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/s25/cs151/application/OfficeHoursController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/s25/cs151/application/home-ClockItMainPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +137,7 @@
       <workItem from="1743222022509" duration="4068000" />
       <workItem from="1743226987363" duration="8495000" />
       <workItem from="1743280577449" duration="634000" />
-      <workItem from="1744259513260" duration="7073000" />
+      <workItem from="1744259513260" duration="8173000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -303,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743280401927</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="edits">
+      <option name="closed" value="true" />
+      <created>1744431163785</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1744431163785</updated>
+    </task>
+    <task id="LOCAL-00023" summary="edits">
+      <option name="closed" value="true" />
+      <created>1744431177462</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1744431177462</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -55,7 +55,7 @@ public class OfficeHoursScheduleController {
         String comment = commentField.getText().trim();
 
         if (name.isEmpty() || date == null || timeSlot == null || course == null) {
-            return; // Skip saving if required fields are missing
+            return;
         }
 
         ArrayList<String> row = new ArrayList<>();
@@ -68,7 +68,7 @@ public class OfficeHoursScheduleController {
 
         fileManager.fileWrite(row);
 
-        // Clear fields after saving
+
         studentNameField.clear();
         scheduleDatePicker.setValue(LocalDate.now());
         timeSlotComboBox.getSelectionModel().clearSelection();
