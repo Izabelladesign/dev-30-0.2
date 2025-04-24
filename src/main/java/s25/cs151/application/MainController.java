@@ -52,4 +52,9 @@ public class MainController {
     private void goToOfficeHoursSchedulePage() throws IOException {
         Main.showOfficeHoursSchedulePage();
     }
+
+    @FXML
+    private void showSearchOfficeHoursSchedulePage() throws IOException {
+        Main.showSearchOfficeHoursSchedulePage();
+    }
 }

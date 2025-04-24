@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="s25.cs151.application.searchOfficeHoursScheduleController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox spacing="10" layoutX="10.0" layoutY="10.0" prefWidth="580.0" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+        <HBox spacing="10">
+            <Label text="Search Student:" />
+            <TextField fx:id="searchField" promptText="Enter name..." />
+            <Button text="Search"/>
+        </HBox>
+
+        <TableView fx:id="scheduleTable" prefHeight="340.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="100"/>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="100"/>
+                <TableColumn fx:id="courseColumn" text="Course" prefWidth="100"/>
+                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="100"/>
+                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="100"/>
+                <TableColumn fx:id="actionColumn" text="Action" prefWidth="80"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+</AnchorPane>

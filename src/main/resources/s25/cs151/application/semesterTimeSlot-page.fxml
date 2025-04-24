@@ -1,40 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="s25.cs151.application.SemesterTimeSlotsController"
+      fx:controller="s25.cs151.application.searchOfficeHoursScheduleController"
       spacing="10" alignment="TOP_LEFT"
       prefWidth="1000" prefHeight="800">
 
-
-    <Label text="Define Semester Time Slots" style="-fx-font-size: 20px;" />
-
+    <Label text="Search Office Hours Schedule" style="-fx-font-size: 20px;" />
 
     <HBox spacing="10" alignment="CENTER_LEFT">
-        <Label text="From:"/>
-        <ComboBox fx:id="fromComboBox"/>
-        <Label text="To:"/>
-        <ComboBox fx:id="toComboBox"/>
-
+        <Label text="Student Name:" minWidth="120"/>
+        <TextField fx:id="searchField" prefWidth="200"/>
+        <Button text="Search" />
     </HBox>
 
-
-    <HBox alignment="CENTER_LEFT">
-        <Button text="Save Time Slots" onAction="#saveAllSlots"/>
-    </HBox>
-
+    <Separator />
 
     <VBox VBox.vgrow="ALWAYS">
-        <TableView fx:id="slotTableView" VBox.vgrow="ALWAYS">
+        <TableView fx:id="scheduleTable" prefHeight="600">
             <columns>
-                <TableColumn fx:id="fromCol" text="From" prefWidth="200"/>
-                <TableColumn fx:id="toCol" text="To" prefWidth="200"/>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="120"/>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="120"/>
+                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="120"/>
+                <TableColumn fx:id="courseColumn" text="Course" prefWidth="120"/>
+                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="120"/>
+                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="120"/>
+                <TableColumn fx:id="actionColumn" text="Action" prefWidth="80"/>
             </columns>
         </TableView>
     </VBox>
 
-
 </VBox>
-

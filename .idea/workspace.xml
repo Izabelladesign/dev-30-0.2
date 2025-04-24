@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="edits">
+      <change afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/OfficeHoursScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/semesterTimeSlot-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/semesterTimeSlot-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CSVFileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CoursesController$Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CoursesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/OfficeHoursController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$TimeSlot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/courses.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/office-hours.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/semesterTimeSlot-page.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +76,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/izabelladoser/Desktop/dev-30-0.2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/izabelladoser/Desktop/dev-30-0.6&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -132,7 +150,13 @@
       <workItem from="1743222022509" duration="4068000" />
       <workItem from="1743226987363" duration="8495000" />
       <workItem from="1743280577449" duration="634000" />
-      <workItem from="1744259513260" duration="16654000" />
+      <workItem from="1744259513260" duration="16748000" />
+      <workItem from="1744499331226" duration="72000" />
+      <workItem from="1744499428073" duration="6000" />
+      <workItem from="1744499477000" duration="12000" />
+      <workItem from="1744499586982" duration="288000" />
+      <workItem from="1744665493096" duration="410000" />
+      <workItem from="1745297889044" duration="7522000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -358,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744496566892</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="edits">
+      <option name="closed" value="true" />
+      <created>1744498770904</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1744498770904</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -13,6 +13,7 @@
     <Button text="Define Semester’s office Hours" onAction="#goToDefineOfficeHours"/>
     <Button text="Define Semester’s Time Slots" onAction="#goToDefineSemesterTimeSlots"/>
     <Button text="Define Courses" onAction="#goToDefineCourses" />
+    <Button text="Search Office Hours Schedule " onAction="#showSearchOfficeHoursSchedulePage" />
 
 
 </VBox>

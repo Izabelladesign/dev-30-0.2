@@ -120,6 +120,18 @@ public class Main extends Application {
         stage.show();
     }
 
+    public static void showSearchOfficeHoursSchedulePage() throws IOException {
+        if (mainStage != null) {
+            mainStage.close();
+        }
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("searchOfficeHoursSchedule.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
+            Stage stage = new Stage();
+            stage.setTitle("Search Office Hours Schedule");
+            stage.setScene(scene);
+            stage.show();
+
+        }
     /**
      * The main method to start the JavaFX application
      *
