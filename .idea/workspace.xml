@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="edits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/home-ClockItMainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/semesterTimeSlot-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/semesterTimeSlot-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CSVFileManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CoursesController$Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/CoursesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/OfficeHoursController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController$TimeSlot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/SemesterTimeSlotsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/courses.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/home-ClockItMainPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/office-hours.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/s25/cs151/application/semesterTimeSlot-page.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +138,7 @@
       <workItem from="1744499477000" duration="12000" />
       <workItem from="1744499586982" duration="288000" />
       <workItem from="1744665493096" duration="410000" />
-      <workItem from="1745297889044" duration="7522000" />
+      <workItem from="1745297889044" duration="16467000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -390,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744498770904</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="edits">
+      <option name="closed" value="true" />
+      <created>1745468426547</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1745468426547</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

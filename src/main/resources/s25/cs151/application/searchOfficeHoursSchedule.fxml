@@ -14,7 +14,7 @@
         <HBox spacing="10">
             <Label text="Search Student:" />
             <TextField fx:id="searchField" promptText="Enter name..." />
-            <Button text="Search"/>
+            <Button text="Search" onAction="#handleSearch"/>
         </HBox>
 
         <TableView fx:id="scheduleTable" prefHeight="340.0">
@@ -25,7 +25,6 @@
                 <TableColumn fx:id="courseColumn" text="Course" prefWidth="100"/>
                 <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="100"/>
                 <TableColumn fx:id="commentColumn" text="Comment" prefWidth="100"/>
-                <TableColumn fx:id="actionColumn" text="Action" prefWidth="80"/>
             </columns>
         </TableView>
     </VBox>
