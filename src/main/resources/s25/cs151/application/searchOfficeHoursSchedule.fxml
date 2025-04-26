@@ -20,13 +20,17 @@
         <TableView fx:id="scheduleTable" prefHeight="340.0">
             <columns>
                 <TableColumn fx:id="nameColumn" text="Name" prefWidth="100"/>
-                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
-                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="100"/>
-                <TableColumn fx:id="courseColumn" text="Course" prefWidth="100"/>
-                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="100"/>
-                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="100"/>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="120"/>
+                <TableColumn fx:id="timeSlotColumn" text="Time Slot" prefWidth="120"/>
+                <TableColumn fx:id="courseColumn" text="Course" prefWidth="120"/>
+                <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="250"/>
+                <TableColumn fx:id="commentColumn" text="Comment" prefWidth="200"/>
             </columns>
         </TableView>
-    </VBox>
 
+        <HBox spacing="10">
+            <Button text="Delete Selected Schedule" onAction="#handleDelete"/>
+        </HBox>
+
+    </VBox>
 </AnchorPane>

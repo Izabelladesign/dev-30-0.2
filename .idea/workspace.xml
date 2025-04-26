@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71a0adab-833b-48e6-b5d9-771c00993f82" name="Changes" comment="edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s25/cs151/application/searchOfficeHoursScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/officeHoursSchedule-page.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/s25/cs151/application/searchOfficeHoursSchedule.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +139,8 @@
       <workItem from="1744499477000" duration="12000" />
       <workItem from="1744499586982" duration="288000" />
       <workItem from="1744665493096" duration="410000" />
-      <workItem from="1745297889044" duration="16467000" />
+      <workItem from="1745297889044" duration="17611000" />
+      <workItem from="1745632560890" duration="1822000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -380,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745468426547</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="edits">
+      <option name="closed" value="true" />
+      <created>1745563659185</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1745563659185</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

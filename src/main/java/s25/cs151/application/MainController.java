@@ -53,6 +53,11 @@ public class MainController {
         Main.showOfficeHoursSchedulePage();
     }
 
+    /**
+     *  Open the "Search Office Hours Schedule"
+     *  Method triggered by user action, e.g button clicking
+     *
+     */
     @FXML
     private void showSearchOfficeHoursSchedulePage() throws IOException {
         Main.showSearchOfficeHoursSchedulePage();
