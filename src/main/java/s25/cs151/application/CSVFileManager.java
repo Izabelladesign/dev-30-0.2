@@ -3,11 +3,20 @@ package s25.cs151.application;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
 /**
  *  CSVFileManager class to manage the Csv file operations such as the writing and reading of data to a file
  *  in which is store in an OfficeHoursData Directory
  */
 public class CSVFileManager {
+    /**
+     * Use Polymorphism to read, write and save to the CSV file
+     */
+    public interface CSVFileOperations {
+        String[] toCSV();
+    }
+
     private final File csvFile;
     private final File dataDir;
 
@@ -32,6 +41,7 @@ public class CSVFileManager {
             System.out.println("Something went wrong when creating the file.");
         }
     }
+
     /**
      * Adds rows of data to our CSV file
      * in which each value is seperated by commas
@@ -48,9 +58,9 @@ public class CSVFileManager {
 
         }
     }
+
     /**
-     *  Reads all the data from our CSV files and returns it as a list of rows
-     *
+     * Reads all the data from our CSV files and returns it as a list of rows
      */
     public ArrayList<ArrayList<String>> fileRead() {
         ArrayList<ArrayList<String>> myDataList = new ArrayList<>();
@@ -79,6 +89,7 @@ public class CSVFileManager {
 
     /**
      * Save the data permanently after the information is added
+     *
      * @param rows
      */
     public void overwriteFile(ArrayList<ArrayList<String>> rows) {
@@ -90,6 +101,16 @@ public class CSVFileManager {
         } catch (IOException e) {
             System.out.println("Error.");
         }
+    }
 
+    public void saveObjectsToFile(List<CSVFileOperations> objects) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true))) {
+            for (CSVFileOperations obj : objects) {
+                bw.write(String.join(",", obj.toCSV()));
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error saving data.");
+        }
     }
 }

@@ -10,6 +10,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Control class for the Office Hours Schedule
@@ -127,6 +128,26 @@ public class OfficeHoursScheduleController {
         if (course == null) {
             return;
         }
+
+        // Create a class to implement the CSVFileOperations interface
+        class ScheduleRow implements CSVFileManager.CSVFileOperations {
+            @Override
+            public String[] toCSV() {
+                return new String[] {
+                        name,
+                        date.toString(),
+                        timeSlot,
+                        course,
+                        reason,
+                        comment
+                };
+            }
+        }
+
+        // Save using polymorphism
+        CSVFileManager.CSVFileOperations entry = new ScheduleRow();
+        fileManager.saveObjectsToFile(List.of(entry));
+
 
         //Creates a new row with all the input data
         ArrayList<String> row = new ArrayList<>();
