@@ -2,7 +2,7 @@
 
 A desktop application built with Java and JavaFX designed to help faculty members manage their office hours efficiently. ClockIt allows users to define semester schedules, create time slots, track student appointments, and generate reports — all in a simple and user-friendly interface. The app is designed to be lightweight, portable, and accessible to faculty with minimal technical experience.
 
-**Collaborators:** Izabella Doser, Tabassum, [Teammate 2], [Teammate 3]  
+**Collaborators:** Izabella Doser, Tabassum Zahir, Mariam Jamil, Yadanar Lin  
 **CS151 San José State University Term Project**
 
 ---
